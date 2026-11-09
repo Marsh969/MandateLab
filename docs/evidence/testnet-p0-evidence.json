@@ -1,0 +1,782 @@
+{
+  "captured_at": "2026-11-09T21:10:37.690Z",
+  "rpc": "https://test.rpc.fastnear.com",
+  "network": {
+    "chain_id": "testnet",
+    "version": "2.14.0-rc.5",
+    "protocol_version": 88,
+    "latest_block_height": 276973594,
+    "latest_block_time": "2026-11-09T21:10:36.351350568Z"
+  },
+  "vault": {
+    "account_id": "vault.mandatelab-p0-40db26.testnet",
+    "exists": true,
+    "amount": "4798566048135888800000000",
+    "code_hash": "7osqEuCkFb4B1D1k2uhXtQAMkmYa26Xk3cGCjQXXC1wb",
+    "storage_usage": 169939,
+    "block_height": 276973592
+  },
+  "policy": {
+    "block_height": 276973593,
+    "value": {
+      "owner_id": "mandatelab-p0-40db26.testnet",
+      "agent_id": "agent.mandatelab-p0-40db26.testnet",
+      "allowed_recipients": [
+        "merchant-a.mandatelab-p0-40db26.testnet",
+        "merchant-b.mandatelab-p0-40db26.testnet"
+      ],
+      "max_per_payment": "500000000000000000000000",
+      "total_budget": "2000000000000000000000000",
+      "expires_at_ns": "1795121703596652800",
+      "paused": false,
+      "policy_version": 1
+    }
+  },
+  "vault_state": {
+    "block_height": 276973593,
+    "value": {
+      "vault_available": "1800000000000000000000000",
+      "vault_pending": "0",
+      "spent_successful": "200000000000000000000000",
+      "spent_pending": "0",
+      "total_funded": "2000000000000000000000000",
+      "budget_remaining": "1800000000000000000000000",
+      "pending_count": 0,
+      "request_count": 1,
+      "policy_version": 1,
+      "account_balance": "4798566048135888800000000",
+      "storage_staked": "1699390000000000000000000",
+      "operational_reserve": "1299176048135888800000000",
+      "block_timestamp_ns": "1794258635746036780"
+    }
+  },
+  "vault_access_keys": [
+    {
+      "public_key": "ed25519:FL5DQGC2tcqMXb6GwwvcXgFSatt7L31vp4R6Ega6UpwW",
+      "permission": "FullAccess"
+    }
+  ],
+  "agent_access_keys": {
+    "account_id": "agent.mandatelab-p0-40db26.testnet",
+    "keys": [
+      {
+        "public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV",
+        "permission": {
+          "FunctionCall": {
+            "allowance": "249033848691473400000000",
+            "method_names": [
+              "request_payment"
+            ],
+            "receiver_id": "vault.mandatelab-p0-40db26.testnet"
+          }
+        }
+      },
+      {
+        "public_key": "ed25519:q8c8hBGDLovBiyYMUnXHPt2jsrWmEdgbn5oZSaWoR6T",
+        "permission": "FullAccess"
+      }
+    ]
+  },
+  "requests": {
+    "mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:4539da8d-b6cf-48e1-9820-bf8649f9d2d5": {
+      "block_height": 276973594,
+      "value": {
+        "request_id": "mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:4539da8d-b6cf-48e1-9820-bf8649f9d2d5",
+        "recipient_id": "merchant-a.mandatelab-p0-40db26.testnet",
+        "amount": "200000000000000000000000",
+        "context_hash": "02fade47e6f22f91022693e8251baabacc791b92f80dec7d32c03c218b03f0cd",
+        "policy_version": 1,
+        "status": "SUCCEEDED",
+        "created_at_ns": "1794257778650202617",
+        "settled_at_ns": "1794257779762729589"
+      }
+    },
+    "mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:03d53a4f-1e45-45e5-a968-22f7170c99fe": {
+      "block_height": 276973594,
+      "value": null
+    },
+    "mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:faa96c1f-6067-497b-ae46-65f3510e3bb0": {
+      "block_height": 276973594,
+      "value": null
+    }
+  },
+  "accounts": [
+    {
+      "account_id": "mandatelab-p0-40db26.testnet",
+      "exists": true,
+      "amount": "4164249587874141400000000",
+      "code_hash": "11111111111111111111111111111111",
+      "storage_usage": 182,
+      "block_height": 276973595
+    },
+    {
+      "account_id": "agent.mandatelab-p0-40db26.testnet",
+      "exists": true,
+      "amount": "498991787105414200000000",
+      "code_hash": "11111111111111111111111111111111",
+      "storage_usage": 342,
+      "block_height": 276973595
+    },
+    {
+      "account_id": "merchant-a.mandatelab-p0-40db26.testnet",
+      "exists": true,
+      "amount": "300000000000000000000000",
+      "code_hash": "11111111111111111111111111111111",
+      "storage_usage": 182,
+      "block_height": 276973595
+    },
+    {
+      "account_id": "merchant-b.mandatelab-p0-40db26.testnet",
+      "exists": true,
+      "amount": "100000000000000000000000",
+      "code_hash": "11111111111111111111111111111111",
+      "storage_usage": 182,
+      "block_height": 276973595
+    },
+    {
+      "account_id": "stranger.mandatelab-p0-40db26.testnet",
+      "exists": true,
+      "amount": "100000000000000000000000",
+      "code_hash": "11111111111111111111111111111111",
+      "storage_usage": 182,
+      "block_height": 276973596
+    }
+  ],
+  "transactions": [
+    {
+      "tx_hash": "5Y2oMUSkxsLAYT4SmAi4rUv6jnqyDWewb9BbeXaqEZa1",
+      "signer_id": "vault.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:FL5DQGC2tcqMXb6GwwvcXgFSatt7L31vp4R6Ega6UpwW",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "DeployContract": {
+            "code": "ZShQe2BjzT68M6QGNEoIajwDGZrZg3KeCfB/e4uBwnY="
+          }
+        },
+        {
+          "FunctionCall": {
+            "args": "eyJhZ2VudF9pZCI6ImFnZW50Lm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQiLCJhbGxvd2VkX3JlY2lwaWVudHMiOlsibWVyY2hhbnQtYS5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwibWVyY2hhbnQtYi5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0Il0sImV4cGlyZXNfYXRfbnMiOiIxNzk1MTIxNzAzNTk2NjUyODAwIiwibWF4X3Blcl9wYXltZW50IjoiNTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwib3duZXJfaWQiOiJtYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwidG90YWxfYnVkZ2V0IjoiMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCJ9",
+            "deposit": "0",
+            "gas": 100000000000000,
+            "method_name": "new"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "SuccessValue",
+        "value": ""
+      },
+      "tx_outcome": {
+        "block_hash": "7dwvCZLeJ69LvUHB8eZCkEJ3jmqRUBzfJhu2CbojeMxS",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "6Zp1vCVGtSYNoiaCmi1q1NqkWs5fHuL1XnorPGqpc9d7"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "6Zp1vCVGtSYNoiaCmi1q1NqkWs5fHuL1XnorPGqpc9d7",
+          "block_hash": "7dwvCZLeJ69LvUHB8eZCkEJ3jmqRUBzfJhu2CbojeMxS",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"mandatelab\",\"version\":\"1.0.0\",\"event\":\"policy_changed\",\"data\":[{\"owner_id\":\"mandatelab-p0-40db26.testnet\",\"agent_id\":\"agent.mandatelab-p0-40db26.testnet\",\"allowed_recipients\":[\"merchant-a.mandatelab-p0-40db26.testnet\",\"merchant-b.mandatelab-p0-40db26.testnet\"],\"max_per_payment\":\"500000000000000000000000\",\"total_budget\":\"2000000000000000000000000\",\"expires_at_ns\":\"1795121703596652800\",\"paused\":false,\"policy_version\":1}]}"
+          ]
+        },
+        {
+          "receipt_id": "74kzn4xh3bZKMvUMdcD6CoJKnCkPqVFqsoNdSTrUnWjF",
+          "block_hash": "BQ6nVAXaFaZxfHZscEWUT6qoh7yR8AwfKfr2bJkPB7U8",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "110725410447155600000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/5Y2oMUSkxsLAYT4SmAi4rUv6jnqyDWewb9BbeXaqEZa1"
+    },
+    {
+      "tx_hash": "HZBXSEx5VfaHcSjPeNfGNWsov5qoU7rEp54hB6H62dPp",
+      "signer_id": "mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:2s4oBKxpUjp7xs3mJ4aToiXbvi1x5KvLJ7yCGmrbpp5g",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "e30=",
+            "deposit": "2000000000000000000000000",
+            "gas": 30000000000000,
+            "method_name": "fund_vault"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "SuccessValue",
+        "value": "2000000000000000000000000"
+      },
+      "tx_outcome": {
+        "block_hash": "Cy3jDbQYuux2TRQ1prhusHy9ZovZuxja5NCRV7BVJ2uF",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "GRqoF2E1dke1xUdzoQwU8SBUnCGP5qm4VqhtvzszXJzM"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "GRqoF2E1dke1xUdzoQwU8SBUnCGP5qm4VqhtvzszXJzM",
+          "block_hash": "ECsmGAUcoGEQhCx9JRgRsuwFnNjB8qVJ2rwb3KVQTN4H",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": "2000000000000000000000000"
+          },
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"mandatelab\",\"version\":\"1.0.0\",\"event\":\"vault_funded\",\"data\":[{\"amount_yocto\":\"2000000000000000000000000\",\"vault_available\":\"2000000000000000000000000\"}]}"
+          ],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "e30=",
+                "deposit": "2000000000000000000000000",
+                "gas": 30000000000000,
+                "method_name": "fund_vault"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "AVFUcjBuR43sNhgdHbZjRdCJspitAbv9eWgku4ooGXg8",
+          "block_hash": "EXEeQ1BgG7Jw8Rmxisp6GpScJyq8S8PePfJijdpTbGpy",
+          "executor_id": "mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "30743485063307400000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/HZBXSEx5VfaHcSjPeNfGNWsov5qoU7rEp54hB6H62dPp"
+    },
+    {
+      "tx_hash": "E2kkdbyutqPcmmgdz7wZEoTNtBo2yMiwjaH9KwFDTPfM",
+      "signer_id": "agent.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:q8c8hBGDLovBiyYMUnXHPt2jsrWmEdgbn5oZSaWoR6T",
+      "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "AddKey": {
+            "access_key": {
+              "nonce": 0,
+              "permission": {
+                "FunctionCall": {
+                  "allowance": "250000000000000000000000",
+                  "method_names": [
+                    "request_payment"
+                  ],
+                  "receiver_id": "vault.mandatelab-p0-40db26.testnet"
+                }
+              }
+            },
+            "public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "SuccessValue",
+        "value": ""
+      },
+      "tx_outcome": {
+        "block_hash": "EAFCXhep96qMGhMHJEzKuqKCa8gbq6nwsqUpzKmYYXNH",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "AtWskkAndGMDEcqCw851S8bB3c6u1CUTMxHLskiNKtWb"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "AtWskkAndGMDEcqCw851S8bB3c6u1CUTMxHLskiNKtWb",
+          "block_hash": "EAFCXhep96qMGhMHJEzKuqKCa8gbq6nwsqUpzKmYYXNH",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": []
+        },
+        {
+          "receipt_id": "DNBr9s8cYYUcwpgmPRfL7kux48zxgMRCNYnjuqUzMfhk",
+          "block_hash": "BUhSrEWN6gi2H6h7egcVKFVU8kNQv3jmSfT4AHTwo72f",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "189277137266400000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/E2kkdbyutqPcmmgdz7wZEoTNtBo2yMiwjaH9KwFDTPfM"
+    },
+    {
+      "tx_hash": "3Pykat9paLowvkmmpiRFjNrWk3dzuioKDpxqDJRvvGXJ",
+      "signer_id": "agent.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "eyJhbW91bnQiOiIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJjb250ZXh0X2hhc2giOiIwMmZhZGU0N2U2ZjIyZjkxMDIyNjkzZTgyNTFiYWFiYWNjNzkxYjkyZjgwZGVjN2QzMmMwM2MyMThiMDNmMGNkIiwicmVjaXBpZW50X2lkIjoibWVyY2hhbnQtYS5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwicmVxdWVzdF9pZCI6Im1hbmRhdGVsYWI6dGVzdG5ldDp2YXVsdC5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0OjQ1MzlkYThkLWI2Y2YtNDhlMS05ODIwLWJmODY0OWY5ZDJkNSJ9",
+            "deposit": "0",
+            "gas": 50000000000000,
+            "method_name": "request_payment"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "SuccessValue",
+        "value": "SUCCEEDED"
+      },
+      "tx_outcome": {
+        "block_hash": "A6dXgvMfBGPuLxmzB165bJ3kC9V2tU9UgAHRtg8femNu",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "GUEkZntXVKWTgxGgibAr3bLeJ1S35FqjFSDUymPv3foz"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "GUEkZntXVKWTgxGgibAr3bLeJ1S35FqjFSDUymPv3foz",
+          "block_hash": "x6CbnntCAgRdzGdbnCw5wU62ve6FodKjBU2V8923zdy",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessReceiptId",
+            "receipt_id": "JBUbj1koGJyCkqsFxU1XmaSxxJeFbhtxxDkhALEAM4i7"
+          },
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"mandatelab\",\"version\":\"1.0.0\",\"event\":\"payment_reserved\",\"data\":[{\"request_id\":\"mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:4539da8d-b6cf-48e1-9820-bf8649f9d2d5\",\"recipient\":\"merchant-a.mandatelab-p0-40db26.testnet\",\"amount_yocto\":\"200000000000000000000000\",\"context_hash\":\"02fade47e6f22f91022693e8251baabacc791b92f80dec7d32c03c218b03f0cd\",\"policy_version\":1,\"status\":\"PENDING\"}]}"
+          ],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "agent.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "eyJhbW91bnQiOiIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJjb250ZXh0X2hhc2giOiIwMmZhZGU0N2U2ZjIyZjkxMDIyNjkzZTgyNTFiYWFiYWNjNzkxYjkyZjgwZGVjN2QzMmMwM2MyMThiMDNmMGNkIiwicmVjaXBpZW50X2lkIjoibWVyY2hhbnQtYS5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwicmVxdWVzdF9pZCI6Im1hbmRhdGVsYWI6dGVzdG5ldDp2YXVsdC5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0OjQ1MzlkYThkLWI2Y2YtNDhlMS05ODIwLWJmODY0OWY5ZDJkNSJ9",
+                "deposit": "0",
+                "gas": 50000000000000,
+                "method_name": "request_payment"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "8aUJyfokt5tM3cQxjp3XzFqZeh8ocgx85UV1Y9gtvrcB",
+          "block_hash": "H7Qbejsw541p572hiryVycvKDJdmmzkQPJfaXNyXMzoS",
+          "executor_id": "merchant-a.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "merchant-a.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "vault.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "200000000000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "2a5sQKDNBG3nCyXEHqt4KzNyAMqkNJa3oorovrL8N34D",
+          "block_hash": "4T4jzwRxEyyRMbvexrPV33uiEwkemhn4U5URSDPkJq7J",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "200864306250000000000"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "JBUbj1koGJyCkqsFxU1XmaSxxJeFbhtxxDkhALEAM4i7",
+          "block_hash": "4T4jzwRxEyyRMbvexrPV33uiEwkemhn4U5URSDPkJq7J",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": "SUCCEEDED"
+          },
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"mandatelab\",\"version\":\"1.0.0\",\"event\":\"payment_settled\",\"data\":[{\"request_id\":\"mandatelab:testnet:vault.mandatelab-p0-40db26.testnet:4539da8d-b6cf-48e1-9820-bf8649f9d2d5\",\"recipient\":\"merchant-a.mandatelab-p0-40db26.testnet\",\"amount_yocto\":\"200000000000000000000000\",\"policy_version\":1,\"status\":\"SUCCEEDED\"}]}"
+          ],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "vault.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "eyJyZXF1ZXN0X2lkIjoibWFuZGF0ZWxhYjp0ZXN0bmV0OnZhdWx0Lm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQ6NDUzOWRhOGQtYjZjZi00OGUxLTk4MjAtYmY4NjQ5ZjlkMmQ1In0=",
+                "deposit": "0",
+                "gas": 47312250894838,
+                "method_name": "on_payment_complete"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "BeJrP1bFr5hC2BiQyJMo8aHdh8mbQGaKzerMMvcpxVAg",
+          "block_hash": "6gwqa5EpkDfdFAGrfGkQNmDghchXFZrMTCXzbGB74yQK",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "48021142925303300000000"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "3Lezf7v5pG5btPDHAevPpCWjM3aAyVuxU3kkPHeBZd9z",
+          "block_hash": "H7Qbejsw541p572hiryVycvKDJdmmzkQPJfaXNyXMzoS",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "2218453998638400000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/3Pykat9paLowvkmmpiRFjNrWk3dzuioKDpxqDJRvvGXJ"
+    },
+    {
+      "tx_hash": "4Wqgw5965CkhtJuzdGuMGvWDT7zt94Nj3739L6ABmZMA",
+      "signer_id": "agent.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "eyJhbW91bnQiOiIzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY29udGV4dF9oYXNoIjoiZmEwYmUwMmEyZmVhZGQ0MDlhNzQ5ZjE0ZDA2ZDdhNzY1YWQyN2MzMzczYjg4MTBlOWRhNWQ0YjI3NDBlOTA5ZCIsInJlY2lwaWVudF9pZCI6InN0cmFuZ2VyLm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQiLCJyZXF1ZXN0X2lkIjoibWFuZGF0ZWxhYjp0ZXN0bmV0OnZhdWx0Lm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQ6MDNkNTNhNGYtMWU0NS00NWU1LWE5NjgtMjJmNzE3MGM5OWZlIn0=",
+            "deposit": "0",
+            "gas": 50000000000000,
+            "method_name": "request_payment"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "Failure",
+        "failure": {
+          "ActionError": {
+            "index": 0,
+            "kind": {
+              "FunctionCallError": {
+                "ExecutionError": "Smart contract panicked: UNAPPROVED_RECIPIENT: recipient is not on the owner-approved allowlist"
+              }
+            }
+          }
+        }
+      },
+      "tx_outcome": {
+        "block_hash": "9oJwQjE7Hb8S2cC8vt9EZX737k4yBzNHNjGrbGXvdUQN",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "G8vQdGjEQemSeLG52U5VwEMSkpDLxEXZZpE2Y3pyuiDg"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "G8vQdGjEQemSeLG52U5VwEMSkpDLxEXZZpE2Y3pyuiDg",
+          "block_hash": "9TU54NCoVwgAnK3qKgCLynXN6Wdh7cyAFDK9sbxNeUZw",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "Failure",
+            "failure": {
+              "ActionError": {
+                "index": 0,
+                "kind": {
+                  "FunctionCallError": {
+                    "ExecutionError": "Smart contract panicked: UNAPPROVED_RECIPIENT: recipient is not on the owner-approved allowlist"
+                  }
+                }
+              }
+            }
+          },
+          "logs": [],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "agent.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "eyJhbW91bnQiOiIzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY29udGV4dF9oYXNoIjoiZmEwYmUwMmEyZmVhZGQ0MDlhNzQ5ZjE0ZDA2ZDdhNzY1YWQyN2MzMzczYjg4MTBlOWRhNWQ0YjI3NDBlOTA5ZCIsInJlY2lwaWVudF9pZCI6InN0cmFuZ2VyLm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQiLCJyZXF1ZXN0X2lkIjoibWFuZGF0ZWxhYjp0ZXN0bmV0OnZhdWx0Lm1hbmRhdGVsYWItcDAtNDBkYjI2LnRlc3RuZXQ6MDNkNTNhNGYtMWU0NS00NWU1LWE5NjgtMjJmNzE3MGM5OWZlIn0=",
+                "deposit": "0",
+                "gas": 50000000000000,
+                "method_name": "request_payment"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "CucYNxibPtk9B34vChqzhQnnPbmdFYwN61R8gr4qnPQ6",
+          "block_hash": "DGDWQD3WMhXp9ES3VbwpS5trRbFVT83j8PzXFNoLoBAG",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "50758642627744700000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/4Wqgw5965CkhtJuzdGuMGvWDT7zt94Nj3739L6ABmZMA"
+    },
+    {
+      "tx_hash": "SMHaNEnXCdp4dnYdahMTbRPoJjUx1yBFxdu6mu2aKU3",
+      "signer_id": "agent.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "eyJhbW91bnQiOiIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJjb250ZXh0X2hhc2giOiIwMmZhZGU0N2U2ZjIyZjkxMDIyNjkzZTgyNTFiYWFiYWNjNzkxYjkyZjgwZGVjN2QzMmMwM2MyMThiMDNmMGNkIiwicmVjaXBpZW50X2lkIjoibWVyY2hhbnQtYS5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwicmVxdWVzdF9pZCI6Im1hbmRhdGVsYWI6dGVzdG5ldDp2YXVsdC5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0OjQ1MzlkYThkLWI2Y2YtNDhlMS05ODIwLWJmODY0OWY5ZDJkNSJ9",
+            "deposit": "0",
+            "gas": 50000000000000,
+            "method_name": "request_payment"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "Failure",
+        "failure": {
+          "ActionError": {
+            "index": 0,
+            "kind": {
+              "FunctionCallError": {
+                "ExecutionError": "Smart contract panicked: DUPLICATE_REQUEST: request_id has already been used"
+              }
+            }
+          }
+        }
+      },
+      "tx_outcome": {
+        "block_hash": "35vLWEvujWUnCUAmGX7jni22Y2zYVTjF9DckVsVUhqXV",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "9cF1tuxq5NaeAHgVp7Hy8xccYfzynU5Nq1N4vmB8qPjS"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "9cF1tuxq5NaeAHgVp7Hy8xccYfzynU5Nq1N4vmB8qPjS",
+          "block_hash": "2pxGPX3fNTWBbNM9UjU8uYCKdacT3oJbwJsZazfwLDQ8",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "Failure",
+            "failure": {
+              "ActionError": {
+                "index": 0,
+                "kind": {
+                  "FunctionCallError": {
+                    "ExecutionError": "Smart contract panicked: DUPLICATE_REQUEST: request_id has already been used"
+                  }
+                }
+              }
+            }
+          },
+          "logs": [],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "agent.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "eyJhbW91bnQiOiIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJjb250ZXh0X2hhc2giOiIwMmZhZGU0N2U2ZjIyZjkxMDIyNjkzZTgyNTFiYWFiYWNjNzkxYjkyZjgwZGVjN2QzMmMwM2MyMThiMDNmMGNkIiwicmVjaXBpZW50X2lkIjoibWVyY2hhbnQtYS5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0IiwicmVxdWVzdF9pZCI6Im1hbmRhdGVsYWI6dGVzdG5ldDp2YXVsdC5tYW5kYXRlbGFiLXAwLTQwZGIyNi50ZXN0bmV0OjQ1MzlkYThkLWI2Y2YtNDhlMS05ODIwLWJmODY0OWY5ZDJkNSJ9",
+                "deposit": "0",
+                "gas": 50000000000000,
+                "method_name": "request_payment"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "GfhNHQLC24jxh2SgABSAJFZX8nQp2U6BYmk1DRs6bjrH",
+          "block_hash": "2YfkXiwFxNDFEvuskHBBZzq8xyam7ZKh2mTpfmJ6Z75y",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "50759509509361100000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/SMHaNEnXCdp4dnYdahMTbRPoJjUx1yBFxdu6mu2aKU3"
+    },
+    {
+      "tx_hash": "7Hx5WSpesshXmajBMTFZJaZQJugSsNoS9dwHfZpprEnY",
+      "signer_id": "agent.mandatelab-p0-40db26.testnet",
+      "signer_public_key": "ed25519:6uFPrePvg1af1RQCALgkkWgk6wVJaNp3PUN9MATtGzV",
+      "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+      "actions": [
+        {
+          "FunctionCall": {
+            "args": "eyJhbW91bnQiOiIzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY29udGV4dF9oYXNoIjoiMDJmYWRlNDdlNmYyMmY5MTAyMjY5M2U4MjUxYmFhYmFjYzc5MWI5MmY4MGRlYzdkMzJjMDNjMjE4YjAzZjBjZCIsInJlY2lwaWVudF9pZCI6Im1lcmNoYW50LWEubWFuZGF0ZWxhYi1wMC00MGRiMjYudGVzdG5ldCIsInJlcXVlc3RfaWQiOiJtYW5kYXRlbGFiOnRlc3RuZXQ6dmF1bHQubWFuZGF0ZWxhYi1wMC00MGRiMjYudGVzdG5ldDpmYWE5NmMxZi02MDY3LTQ5N2ItYWU0Ni02NWYzNTEwZTNiYjAifQ==",
+            "deposit": "0",
+            "gas": 50000000000000,
+            "method_name": "request_payment"
+          }
+        }
+      ],
+      "final_execution_status": "FINAL",
+      "final_status": {
+        "outcome": "Failure",
+        "failure": {
+          "ActionError": {
+            "index": 0,
+            "kind": {
+              "FunctionCallError": {
+                "ExecutionError": "Smart contract panicked: PER_PAYMENT_LIMIT: amount exceeds the per-payment limit"
+              }
+            }
+          }
+        }
+      },
+      "tx_outcome": {
+        "block_hash": "EPzxw3KJSuYnpi3idN6TPWoCKbAAMkK2NabiqtNBavCJ",
+        "status": {
+          "outcome": "SuccessReceiptId",
+          "receipt_id": "41QZf7RqdZhx2usTwQYzoETACuE19PoqP5TyKAvsTHFe"
+        }
+      },
+      "receipts": [
+        {
+          "receipt_id": "41QZf7RqdZhx2usTwQYzoETACuE19PoqP5TyKAvsTHFe",
+          "block_hash": "Gyuh2fFq3UxHN7Ai7GyQTSr8ksoNQPuXUiWbXzfdkE3Z",
+          "executor_id": "vault.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "Failure",
+            "failure": {
+              "ActionError": {
+                "index": 0,
+                "kind": {
+                  "FunctionCallError": {
+                    "ExecutionError": "Smart contract panicked: PER_PAYMENT_LIMIT: amount exceeds the per-payment limit"
+                  }
+                }
+              }
+            }
+          },
+          "logs": [],
+          "receiver_id": "vault.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "agent.mandatelab-p0-40db26.testnet",
+          "actions": [
+            {
+              "FunctionCall": {
+                "args": "eyJhbW91bnQiOiIzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY29udGV4dF9oYXNoIjoiMDJmYWRlNDdlNmYyMmY5MTAyMjY5M2U4MjUxYmFhYmFjYzc5MWI5MmY4MGRlYzdkMzJjMDNjMjE4YjAzZjBjZCIsInJlY2lwaWVudF9pZCI6Im1lcmNoYW50LWEubWFuZGF0ZWxhYi1wMC00MGRiMjYudGVzdG5ldCIsInJlcXVlc3RfaWQiOiJtYW5kYXRlbGFiOnRlc3RuZXQ6dmF1bHQubWFuZGF0ZWxhYi1wMC00MGRiMjYudGVzdG5ldDpmYWE5NmMxZi02MDY3LTQ5N2ItYWU0Ni02NWYzNTEwZTNiYjAifQ==",
+                "deposit": "0",
+                "gas": 50000000000000,
+                "method_name": "request_payment"
+              }
+            }
+          ]
+        },
+        {
+          "receipt_id": "HpC4cWx4EyNBgE3yeUNzQ3x4bazGitXyRzW3SmTVd5Uk",
+          "block_hash": "FxZMHRcAx6rP3RUc2gkaUDhDHZVeMLHkAGNquu1BuCew",
+          "executor_id": "agent.mandatelab-p0-40db26.testnet",
+          "status": {
+            "outcome": "SuccessValue",
+            "value": ""
+          },
+          "logs": [],
+          "receiver_id": "agent.mandatelab-p0-40db26.testnet",
+          "predecessor_id": "system",
+          "actions": [
+            {
+              "Transfer": {
+                "deposit": "50759018239109900000000"
+              }
+            }
+          ]
+        }
+      ],
+      "explorer": "https://testnet.nearblocks.io/txns/7Hx5WSpesshXmajBMTFZJaZQJugSsNoS9dwHfZpprEnY"
+    }
+  ]
+}
