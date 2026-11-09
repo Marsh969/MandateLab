@@ -1,0 +1,29 @@
+# Rust / build output
+target/
+**/target/
+
+# Node
+node_modules/
+.next/
+dist/
+
+# Secrets and credentials — NEVER commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+**/near-credentials/
+.near-credentials/
+**/credentials/*.json
+*secret*
+*seed*
+testnet-evidence/raw/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Locally compiled sandbox shim
+scripts/sandbox/build/
